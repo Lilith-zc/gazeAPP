@@ -20,6 +20,7 @@ function screenFull() {
 }
 
 
+
 function PlotGaze(GazeData) {
     document.getElementById("GazeData").innerHTML = "GazeX: " + GazeData.GazeX + " GazeY: " + GazeData.GazeY;
 
@@ -98,3 +99,37 @@ document.querySelectorAll(".form-control").forEach(input => {
         input.className = "form-control trick-input";
     }
 });
+
+function verification(){
+    var verify = 1;
+    var top =document.getElementById("Topinput").value;
+    var left =document.getElementById("Leftinput").value;
+    var right =document.getElementById("Rightinput").value;
+    var down =document.getElementById("Downinput").value;
+    console.log(top);
+    if(trickSign != "Top" && top == "521"){}
+    else if(trickSign == "Top" && top != "521" && top !=""){}
+    else{
+        verify = 0;
+    }
+
+    if(trickSign != "Left" && left == ""){}
+    else if(trickSign == "Left" && left != ""){}
+    else{
+         verify = 0;
+    }
+
+    if(trickSign != "Down" && down == "843"){}
+    else if(trickSign == "Down" && down != "843"&& down != "0"){}
+    else{
+         verify = 0;
+    }
+
+    if(trickSign != "Right" && right == "187"){}
+    else if(trickSign == "Right" && right != "187" && right != ""){}
+    else{
+         verify = 0;
+    }
+    if(verify == 1){ alert("verify successfully");}
+    else if(verify == 0){alert("verify denied");}
+}

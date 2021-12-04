@@ -9,42 +9,51 @@
         <script src= "plugins/bootstrap-5.0.1-dist/js/bootstrap.bundle.js"></script>
         <script src= "GazeCloudAPI.js" ></script>
     </head>
+
     <body style="height: 100%; overflow: hidden;">
+
         <div class="row h-100 w-100 m-0">
+
+
+
             <div class="col-3 h-100">
                 <div id="Left" class="card h-100 input-card-not-active" style="padding: 0px 12px;">
-                    <input id="Leftinput" type="password" class="form-control" placeholder="Left" style="margin: auto;">
+                    <input  id="Leftinput" type="password" class="form-control" placeholder="Left" style="margin: auto;">
                 </div>
             </div>
             <div class="col-6 h-100">
                 <div class="row m-0" style="height: 35%;">
                     <div id="Top" class="card h-100 input-card-not-active" style = "padding:0px 20%">
-                        <input id="Topinput" type="password" class="form-control" placeholder="Top" style="margin: auto;">
+                        <input  id="Topinput" type="password" class="form-control" placeholder="Top" style="margin: auto;">
                     </div>
                 </div>
                 <div class="row m-0" style="height: 30%;">
                     <div class="col-12 p-3">
-                        <h3>GazeCloudAPI integration example</h3>
+                        <h5>The test password is: top:521 down:843 right:187</h5>
                         <button type="button" class="btn btn-primary" onclick="screenFull();">Start</button>
-                        <button type="button" class="btn btn-primary" onclick="GazeCloudAPI.StopEyeTracking();">Stop</button>
+                        <button type="button" class="btn btn-primary" onclick="verification();">verification</button>
                         <p class="m-0 mt-1">Real-Time Result:</p>
                         <p class="m-0 mt-1" id="GazeData">@</p>
                     </div>
                 </div>
                 <div class="row m-0" style="height: 35%;">
                     <div id="Down" class="card h-100 input-card-not-active" style = "padding:0px 20%">
-                        <input id="Downinput"  type="password" class="form-control" placeholder="Down" style="margin: auto;">
+                        <input  id="Downinput"  type="password" class="form-control" placeholder="Down" style="margin: auto;">
                     </div>
                 </div>
             </div>
-
             <div class="col-3 h-100">
                 <div id="Right" class="card h-100 input-card-not-active" style="padding: 0px 12px;">
-                    <input id="Rightinput" type="password" class="form-control" placeholder="Right" style="margin: auto;">
+                    <input  id="Rightinput" type="password" class="form-control" placeholder="Right" style="margin: auto;">
                 </div>
             </div>
+
+
+
         </div>
+
         <div id ="gaze" style ='position: absolute; display: none; width: 100px; height: 100px; border-radius: 50%; border: solid 2px rgba(255, 255,255, .2); box-shadow: 0 0 100px 3px rgba(125, 125,125, .5);	pointer-events: none; z-index: 999999;'></div>
         <script src= "base.js" ></script>
     </body>
+
 </html>
